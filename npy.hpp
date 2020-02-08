@@ -35,7 +35,7 @@
 #include <algorithm>
 #include <regex>
 #include <unordered_map>
-
+#include "umHalf.h"
 
 namespace npy {
 
@@ -107,6 +107,8 @@ struct Typestring {
 
     Typestring(const std::vector<float>& v) 
       :c_endian {host_endian_char}, c_type {'f'}, len {sizeof(float)} {}
+    Typestring(const std::vector<half>& v)
+      :c_endian{ host_endian_char }, c_type{ 'f' }, len{ sizeof(half) } {}
     Typestring(const std::vector<double>& v) 
       :c_endian {host_endian_char}, c_type {'f'}, len {sizeof(double)} {}
     Typestring(const std::vector<long double>& v) 
