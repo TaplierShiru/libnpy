@@ -16,6 +16,7 @@ It also allows *reading* .npy files, although only a very limited subset of data
  Supported types:
  - unsigned integer
  - signed integer
+ - half_float (for more detail visit: https://github.com/acgessler/half_float)
  - floating point
  - complex floating point (std::complex<float>, ...)
 
