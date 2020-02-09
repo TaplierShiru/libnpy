@@ -7,6 +7,8 @@ Refer to [format.py](https://github.com/numpy/numpy/blob/master/numpy/lib/format
 This libraries primary purpose is *writing* numerical data easily and efficiently into the .npy format.
 It also allows *reading* .npy files, although only a very limited subset of data types are supported.
 
+This repositories support half-float type (float16) in C++, which you can install here:  https://github.com/acgessler/half_float .
+
 ## Features
  - Writing C++ vectors (std::vector<T>) to .npy files
  - Reading (some) simple .npy files into C++ vectors
